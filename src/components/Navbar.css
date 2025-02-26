@@ -1,0 +1,631 @@
+/* Navbar.css */
+
+/* Navbar Container */
+.navbar-container {
+  
+  margin-top: -100px;
+  height: 750px;
+
+  backdrop-filter: blur(8px);
+
+  background-image: url('/images/image 12.png');
+  background-size: cover;
+  opacity:1;
+  
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 80px;
+  
+}
+
+.logo {
+
+  height: 80px;
+  margin-top: 14px;
+  margin-left: 80px;
+}
+
+.nav-links {
+  display: inline-flex;
+  align-items: center;
+  gap: 60px;
+  list-style: none;
+  font-size: 20px;
+  font-weight: 500;
+  color: #1E293B;
+  font-family: Metropolis;
+margin-right: 90px;
+  margin-top: 42px;
+  width: Hug(533px);
+  height: Hug(60px);
+  
+}
+
+.nav-links li a{
+  width: 61;
+  height: 60;
+  font-family: Metropolis;
+font-weight: 500;
+font-size: 18px;
+line-height: 60px;
+letter-spacing: 0%;
+margin-left: 0px;
+color: #1E293B;
+  cursor: pointer;
+  letter-spacing: .6px;
+  transition: color 0.3s ease;
+  
+}
+ 
+.nav-links li a:hover {
+  color: #FF7018;
+}
+
+.contact-button {
+  width: 150;
+  height: 46px;
+  display: flex;
+  font-size: 18;
+  background-color: #FF7018;
+  color: #FFFFFF;
+  padding: 15px 18px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  cursor: pointer;
+  gap:10px;
+  font-family: Metropolis;
+  text-align: center;
+  font-weight: 600;
+  font-style: normal;
+  margin-top: 0px;
+  letter-spacing: .6px;
+}
+.contact-button2{
+  background-color: #FF7018;
+  color: white;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 10px;
+  letter-spacing: .6px;
+  cursor: pointer;
+  font-family: Metropolis;
+  transition: background-color 0.3s ease;
+}
+.contact-button:hover {
+  background-color: #ea580c;
+}
+.contact-button2:hover {
+  background-color: #ea580c;
+}
+/* Mobile Menu */
+.mobile-menuopen {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -12px;
+  position:relative;
+  left: 0;
+  width: 100%;
+  background: #1E293B;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 16px 0;
+  
+  gap: 0px;
+  list-style: none;
+  font-size: 16px;
+  font-weight: 800px;
+  color: #FFFFFF;
+  letter-spacing: .6px;
+}
+.mobile-menuopen li {
+  cursor: pointer;
+  transition: color 0.3s ease;
+  
+}
+
+.mobile-menuopen li:hover {
+  color: #FF7018;
+}
+
+.menu-button {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  
+}
+.menu-button:hover{
+  border: 1px solid #1E293B ;
+
+}
+.gradint-back{
+  background: linear-gradient(180deg, rgba(241, 240, 240, 0) 0%, #F1F0F0 100%);
+margin-top: 234px;
+height: 495px;
+position:relative;
+z-index: -1;
+}
+.para3{
+
+  height: 60px;
+position: relative;
+
+margin-top: -620px;
+  color: #383E48;
+text-align: center;
+font-family: Metropolis;
+font-size: 4rem;
+font-style: normal;
+font-weight: 800;
+line-height: 60px; /* 85.714% */
+letter-spacing: .6px;
+}
+ 
+
+.cta-text {
+  margin-top: 60px;
+  color: #FF7018;
+text-align: center;
+font-family: Metropolis;
+font-size: 22px;
+font-style: normal;
+font-weight: 700;
+line-height: 60px; /* 250% */
+}
+
+.email-container {
+  width: Hug(434px);
+  height: Hug(50px);
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  
+}
+
+.email-input {
+  padding: 15px 18px;
+  width: 337px;
+  height: 50;
+  font-family: Metropolis;
+  border: 1px solid #4B5563;
+  border-radius: 10px 10px 10px 10px;
+  outline: none;
+  font-style: italic;
+  font-weight: 400;
+font-style: italic;
+font-size: 16px;
+
+letter-spacing: .6px;
+}
+.email-input ::placeholder{
+  font-family: Metropolis;
+font-weight: 400;
+font-size: 18px;
+line-height: 60px;
+letter-spacing: 0%;
+
+}
+.email-submit {
+  background-color: #FF7018;
+  color: #FFFFFF;
+  
+  border: none;
+  font-weight: 600;
+  font-family: Metropolis;
+  cursor: pointer;
+  
+height: 55px;
+border-radius: 10px;
+gap: 10px;
+padding: 15px;
+
+}
+ 
+.email-submit:hover {
+  background-color: #FF7018;
+}
+
+/* Responsive Design */
+@media (max-width: 798px) {
+  .nav-links {
+    display: none;
+  }
+  .contact-button {
+    display: none;
+  }
+  .menu-button {
+    display: block;
+  }
+   
+}
+@media (min-width: 768px) {
+  .mobile-menuopen{
+    display: none;
+  }
+   
+}
+.sports-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 1502px;
+  height: 205px;
+  margin-left: -105px;
+  margin-top: 110px;
+  /* overflow: hidden; */
+  animation: moveRow 5s linear infinite; 
+}
+@keyframes moveRow {
+  0% {
+    transform: translateX(-100%);
+  }     
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.sport-card {
+  position: relative;
+  border-radius: 20px;
+  
+}
+
+ 
+
+.sport-image {
+  width: 358.75px;
+height: 205px;
+flex-shrink: 0;
+aspect-ratio: 476.42/220.00;
+border-radius: 20px;
+}
+
+.sport-name {
+  width: Hug(120px);
+height: Fixed(30px);
+border-top-left-radius: 33px;
+border-bottom-left-radius: 33px;
+border-top-width: 2px;
+padding-top: 4px;
+padding-right: 17px;
+padding-bottom: 4px;
+padding-left: 17px;
+gap: 16px;
+
+border-top: 2px solid #1E293B;
+  position: absolute;
+    bottom: 22px;
+  right: 0px;
+  background: #FFFFFF;
+  
+ 
+  
+}
+.sp-name{
+  font-family: Metropolis;
+  color: #1E293B;
+  font-weight: 600;
+  font-size: 16px;
+  
+  
+}
+
+@media (max-width: 768px) {
+  .navbar-container {
+    margin-left: -300px;
+      margin-top: -100px;
+      height: 826px;
+      backdrop-filter: blur(8px);
+      background-image: url('/images/image 12.png');
+      background-size: cover;
+      opacity:1;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+    
+  }
+  .logo {
+
+    height: 80px;
+    margin-top: 14px;
+    margin-left: 330px;
+  }
+  .para3{
+    height: 60px;  
+  margin-top: -620px;
+    color: #383E48;
+  text-align: center;
+  font-family: Metropolis;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 60px; /* 85.714% */
+  }
+  .cta-text {
+    margin-left: 270px;
+    margin-top: 80px;
+    color: #FF7018;
+  text-align: center;
+  font-family: Metropolis;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 60px; /* 250% */
+  }
+  
+  .email-container {
+    
+    
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+  
+    margin-left: 300px;
+  }
+  
+  .email-input {
+    padding: 15px 18px;
+    width: 290px;
+    height: 50;
+    font-family: Metropolis;
+    border: 1px solid #4B5563;
+    border-radius: 10px 10px 10px 10px;
+    outline: none;
+    font-style: italic;
+    font-weight: 400;
+  font-style: italic;
+  font-size: 16px;
+  
+  letter-spacing: .6px;
+  }
+  .email-input ::placeholder{
+    font-family: Metropolis;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 60px;
+  letter-spacing: 0%;
+  
+  }
+  
+  .email-submit{
+    background-color: #FF7018;
+  
+    border: none;
+    
+    cursor: pointer;
+    width: Fixed(40px);
+  height: Fixed(40px);
+  border-radius: 10px;
+  gap: 10px;
+  padding: 14px;
+  
+  }
+   
+  
+  .email-submit:hover {
+    background-color: #FF7018;
+  }
+  .mobile-menuopen {
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -12px;
+    position:relative;
+    left: 0;
+    width: 100%;
+    background: #1E293B;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 16px 0;
+    
+    gap: 0px;
+    list-style: none;
+    font-size: 16px;
+    font-weight: 800px;
+    color: #FFFFFF;
+    letter-spacing: .6px;
+  }
+  .mobile-menuopen li {
+    cursor: pointer;
+    transition: color 0.3s ease;
+    text-align: center;
+    margin-left: 300px;
+    
+  }
+  .contact-button2{
+    background-color: #FF7018;
+    color: #FFFFFF;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 10px;
+    margin-left: 300px;
+    letter-spacing: .6px;
+    cursor: pointer;
+    font-family: Metropolis;
+    transition: background-color 0.3s ease;
+  }
+  .sports-container {
+    justify-content: center;
+    margin-left: -320px;
+  }
+  /* .sport-card {
+    display: none;
+  } */
+  .sport-card:first-child {
+    display: block;
+  }
+}
+@media (max-width: 480px) {
+  .sports-container {
+    justify-content: center;
+    margin-left: -320px;
+  }
+  /* .sport-card {
+    display: none;
+  } */
+  .sport-card:first-child {
+    display: block;
+  }
+  .navbar-container {
+  margin-left: -300px;
+    margin-top: -100px;
+    height: 766px;
+    backdrop-filter: blur(8px);
+    background-image: url('/images/image 12.png');
+    background-size: cover;
+    opacity:1;
+    
+  }
+  .logo {
+    height: 80px;
+    margin-top: 12px;
+    margin-left: 320px;
+  }
+  .gradint-back{
+    background: linear-gradient(180deg, rgba(241, 240, 240, 0) 0%, #F1F0F0 100%);
+  margin-top: 294px;
+  height: 370px;
+  position:relative;
+  z-index: -1;
+  }
+  .para3{
+    
+    height: 60px;
+  position: relative;
+  
+  margin-top: -620px;
+    color: #383E48;
+  text-align: center;
+  font-family: Metropolis;
+  font-size: clamp(32px, 5vw, 44px);
+  font-style: normal;
+  font-weight: 800;
+  line-height: 60px; /* 85.714% */
+  }
+   
+  
+  .cta-text {
+    margin-left: 270px;
+    margin-top: 80px;
+    color: #FF7018;
+  text-align: center;
+  font-family: Metropolis;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px; /* 250% */
+  }
+  
+  .email-container {
+    width: 210px;
+    height: Hug(50px);
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    opacity: .75;
+    margin-left: 400px;
+  }
+  
+  .email-input {
+    padding: 15px 18px;
+    width: 337px;
+    height: 50;
+    font-family: Metropolis;
+    border: 1px solid #4B5563;
+    border-radius: 10px 10px 10px 10px;
+    outline: none;
+    font-style: italic;
+    font-weight: 400;
+  font-style: italic;
+  font-size: 16px;
+  
+  letter-spacing: .6px;
+  }
+  .email-input ::placeholder{
+    font-family: Metropolis;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 60px;
+  letter-spacing: 0%;
+  
+  }
+  
+  .email-submit{
+    background-color: #FF7018;
+  
+    border: none;
+    
+    cursor: pointer;
+    width: Fixed(40px);
+  height: Fixed(40px);
+  border-radius: 10px;
+  gap: 10px;
+  padding: 14px;
+  
+  }
+   
+  
+  .email-submit:hover {
+    background-color: #FF7018;
+  }
+  .sports-container {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    width: 1502px;
+    height: 200px;
+    margin-left: -105px;
+    margin-top: 160px;
+    /* overflow: hidden; */
+    animation: moveRow 5s linear infinite; 
+  }
+  .mobile-menuopen {
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -12px;
+    position:relative;
+    left: 0;
+    width: 100%;
+    background: #1E293B;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 16px 0;
+    
+    gap: 0px;
+    list-style: none;
+    font-size: 16px;
+    font-weight: 800px;
+    color: #FFFFFF;
+    letter-spacing: .6px;
+  }
+  .mobile-menuopen li {
+    cursor: pointer;
+    transition: color 0.3s ease;
+    text-align: center;
+    margin-left: 240px;
+    
+  }
+  .contact-button2{
+    background-color: #FF7018;
+    color: #FFFFFF;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 10px;
+    margin-left: 240px;
+    letter-spacing: .6px;
+    cursor: pointer;
+    font-family: Metropolis;
+    transition: background-color 0.3s ease;
+  }
+
+
+}
+ 

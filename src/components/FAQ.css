@@ -1,0 +1,252 @@
+.faq-container{
+margin: auto;
+height: 1300px;
+background-color: #F2EFEA;
+}
+  
+  .faq-heading {
+    width: 850;
+height: 48;
+font-family: Metropolis;
+font-weight: 700;
+font-size: 42px;
+line-height: 48px;
+letter-spacing: 0.6px;
+text-align: center;
+color: #FF7018;
+
+  }
+  .faq-list{
+    width: 824px;
+    height: 829px;
+    color: #383E48;
+    
+    margin-top: 100px;
+    margin-left: 268px;
+    
+  }
+  .faq-toggle{
+    font-family: Metropolis;
+    font-size: 32px;
+    font-weight: 500;
+  }
+  .faq-title{
+    font-family: Metropolis;
+font-weight: 700;
+font-size: 18px;
+line-height: 20px;
+letter-spacing: 0.4px;
+color: #383E48;
+  }
+  .faq-item {
+    border-bottom: 1px solid #383E48;
+    padding: 15px 5px;
+    cursor: pointer;
+    margin-top: 30px;
+    
+  }
+  
+  .faq-question {
+    display: flex;
+    justify-content: space-between;
+    
+    font-family: Metropolis;
+font-weight: 700;
+font-size: 18px;
+line-height: 20px;
+letter-spacing: 0.6px;
+margin-bottom: 15px;
+  }
+  
+  .faq-answer {
+    
+    color: #383E48;
+    margin-top: 8px;
+    font-family: Metropolis;
+font-weight: 400;
+font-size: 16px;
+line-height: 27px;
+letter-spacing: 0.6px;
+margin-top: 45px;
+margin-bottom: 25px;    
+  }
+  
+  .faq-item.active .faq-answer {
+    display: block;
+    
+  }
+  
+  .faq-icon {
+    width: 20px;
+    height: 3px;
+    color: #383E48;
+  }
+  @media (max-width:768px) {
+    .faq-container{
+      
+      height: 1320px;
+      }
+     
+    .faq-heading {
+      width: 850;
+  height: 48;
+  font-family: Metropolis;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 0.6px;
+  text-align: center;
+  color: #FF7018;
+  margin-top: 110px;
+    }
+    .faq-list{
+  
+    width: 400px;
+    color: #383E48;
+    margin-top: 100px;
+    margin-left: 40px;
+    margin-top: 90px;
+  }
+  .faq-toggle{
+    font-family: Metropolis;
+    font-size: 22px;
+    font-weight: 500;
+    
+  }
+  .faq-title{
+    font-family: Metropolis;
+font-weight: 600;
+font-size: 14px;
+line-height: 20px;
+letter-spacing: 0.3px;
+color: #383E48;
+  }
+  .faq-item {
+    border-bottom: 1px solid #383E48;
+    padding: 15px 5px;
+    cursor: pointer;
+    margin-top: 30px;
+    
+  }
+  
+  .faq-question {
+    display: flex;
+    justify-content: space-between;
+    
+    font-family: Metropolis;
+font-weight: 700;
+font-size: 14px;
+line-height: 20px;
+letter-spacing: 0.3px;
+margin-bottom: 15px;
+  }
+  
+  .faq-answer {
+    
+    color: #383E48;
+    margin-top: 8px;
+    font-family: Metropolis;
+font-weight: 400;
+font-size: 14px;
+line-height: 27px;
+letter-spacing: 0.3px;
+margin-top: 45px;
+margin-bottom: 25px;    
+  }
+  
+  .faq-item.active .faq-answer {
+    display: block;
+    
+  }
+  
+  .faq-icon {
+    width: 20px;
+    height: 3px;
+    color: #383E48;
+  }
+  }
+  @media (max-width:480px) {
+    .faq-container{
+      overflow-x: hidden;
+      overflow-y: hidden;
+      height: 1355px;
+      }
+     
+    .faq-heading {
+      width: 850;
+  height: 48;
+  font-family: Metropolis;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 48px;
+  letter-spacing: 0.6px;
+  text-align: center;
+  color: #FF7018;
+  margin-top: 110px;
+    }
+    .faq-list{
+  
+    width: 300px;
+    color: #383E48;
+    margin-top: 100px;
+    margin-left: 40px;
+    margin-top: 90px;
+  }
+  .faq-toggle{
+    font-family: Metropolis;
+    font-size: 22px;
+    font-weight: 500;
+    
+  }
+  .faq-title{
+    font-family: Metropolis;
+font-weight: 600;
+font-size: 14px;
+line-height: 20px;
+letter-spacing: 0.3px;
+color: #383E48;
+  }
+  .faq-item {
+    border-bottom: 1px solid #383E48;
+    padding: 15px 5px;
+    cursor: pointer;
+    margin-top: 30px;
+    
+  }
+  
+  .faq-question {
+    display: flex;
+    justify-content: space-between;
+    
+    font-family: Metropolis;
+font-weight: 700;
+font-size: 14px;
+line-height: 20px;
+letter-spacing: 0.3px;
+margin-bottom: 15px;
+  }
+  
+  .faq-answer {
+    
+    color: #383E48;
+    margin-top: 8px;
+    font-family: Metropolis;
+font-weight: 400;
+font-size: 14px;
+line-height: 27px;
+letter-spacing: 0.3px;
+margin-top: 45px;
+margin-bottom: 25px;    
+  }
+  
+  .faq-item.active .faq-answer {
+    display: block;
+    
+  }
+  
+  .faq-icon {
+    width: 20px;
+    height: 3px;
+    color: #383E48;
+  }
+  }

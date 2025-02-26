@@ -1,0 +1,311 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  padding: 24px;
+  background-color: #f3f4f6;
+}
+.image-missionsymbol{
+    margin-top: -35px;
+    display: grid;
+  place-items: end;
+}
+.image-missionsymbol2{
+  margin-top: -35px;
+}
+.imageset1{
+  width: 54px;
+  height: 50px;
+}
+.card {
+  margin-top: 60px;
+  border: 1px solid #383E48;
+width: 1000px;
+height: 380px;
+  background: #FFFFFF;
+  
+
+  border-radius: 30px;
+  padding: 24px;
+  border-right: 7px solid #383E48;
+  border-bottom: 7px solid #383E48;
+  position: relative;
+}
+.card2 {
+  
+  width: 1000px;
+  height: 520px;
+    background: #FFFFFF;
+    
+  border: 1px solid #383E48;
+    border-radius: 30px;
+    padding: 24px;
+    border-right: 7px solid #383E48;
+    border-bottom: 7px solid #383E48;
+    position: relative;
+  }
+ 
+.ourmistringle{
+  width: 34px;
+  height: 41px;
+  margin-left: -48px;
+  margin-top: -12px;
+}
+.card-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 8px 16px;
+  font-weight: bold;
+  color:#FFFFFF;
+  
+  
+}
+
+.mission-header {
+  
+  width: 290px;
+  height: 62px;
+  margin-top: 28px;
+  margin-left: -41px;
+}
+.ourmis{
+  position: absolute;
+  color: #FFFFFF;
+  font-family: Metropolis;
+font-weight: 700;
+font-size: 36px;
+line-height: 42px;
+letter-spacing: 0%;
+margin-top: 5px;
+margin-left: 0px;
+
+
+}
+.ourvistringle{
+  width: 31px;
+  height: 41px;
+  margin-left:1018px;
+  margin-top: -10px;
+}
+.vision-header {
+  width: 290px;
+  height: 62px;
+  right: 0;
+  left: auto;
+  margin-top: 37px;
+  margin-right: -42px;
+  
+}
+.ourvis{
+  right: 20px;
+  color: #FFFFFF;
+  font-family: Metropolis;
+font-weight: 700;
+font-size: 36px;
+line-height: 42px;
+letter-spacing: 0%;
+margin-top: 10px;
+
+position: absolute;
+
+}
+.highlight {
+  margin-top: 70px;
+  font-style: italic;
+  color: #FE7018;
+  font-size: 36px;
+  font-weight: 700;
+  font-family: Metropolis;
+  line-height: 30px;
+  margin-left: 15px;
+}
+.highlight1 {
+  margin-top: 70px;
+  font-style: italic;
+  color: #FE7018;
+  font-size: 36px;
+  font-weight: 700;
+  font-family: Metropolis;
+  text-align: right;
+  line-height: 50px;
+  margin-right: 15px;
+}
+
+.text {
+  color: #383E48;
+font-family: Metropolis;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px;
+line-height: 1.4;
+letter-spacing: 0.6px;
+margin-left: 15px;
+
+}
+.text2 {
+  margin-right: 15px;
+  color: #383E48;
+  text-align: right;
+  font-family: Metropolis;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 150% */
+  letter-spacing: 0.6px;
+}
+
+.bold1{
+  color: #383E48;
+font-family: Metropolis;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: 30px;
+}
+
+@media (max-width:768px) {
+  .card{
+    width: 365px;
+    height:480px;
+  }
+  .card2{
+    width: 365px;
+    height:780px;
+  }
+  .ourvistringle{
+    width: 31px;
+    height: 41px;
+
+    margin-top: -10px;
+  }
+  .highlight {
+    margin-top: 70px;
+    font-style: italic;
+    color: #FE7018;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: Metropolis;
+    line-height: 30px;
+    margin-left: 15px;
+  }
+  .highlight1 {
+    margin-top: 70px;
+    font-style: italic;
+    color: #FE7018;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: Metropolis;
+    text-align: right;
+    line-height: 50px;
+    margin-right: 15px;
+  }
+  
+  .text {
+    color: #383E48;
+  font-family: Metropolis;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  line-height: 1.4;
+  letter-spacing: 0.6px;
+  margin-left: 15px;
+  
+  }
+  .text2 {
+    margin-right: 15px;
+    color: #383E48;
+    text-align: right;
+    font-family: Metropolis;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 150% */
+    letter-spacing: 0.6px;
+  }
+  
+  .bold1{
+    color: #383E48;
+  font-family: Metropolis;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  
+  }
+}
+@media (max-width:480px) {
+  
+  .card{
+    width: 320px;
+    height:480px;
+  }
+  .card2{
+    width: 330px;
+    height:870px;
+  }
+  .ourvistringle{
+    width: 31px;
+    height: 41px;
+
+    margin-top: -10px;
+  }
+  .highlight {
+    margin-top: 70px;
+    font-style: italic;
+    color: #FE7018;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: Metropolis;
+    line-height: 30px;
+    margin-left: 15px;
+  }
+  .highlight1 {
+    margin-top: 70px;
+    font-style: italic;
+    color: #FE7018;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: Metropolis;
+    text-align: right;
+    line-height: 50px;
+    margin-right: 15px;
+  }
+  
+  .text {
+    color: #383E48;
+  font-family: Metropolis;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  line-height: 1.4;
+  letter-spacing: 0.6px;
+  margin-left: 15px;
+  
+  }
+  .text2 {
+    margin-right: 15px;
+    color: #383E48;
+    text-align: right;
+    font-family: Metropolis;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 150% */
+    letter-spacing: 0.6px;
+  }
+  
+  .bold1{
+    color: #383E48;
+  font-family: Metropolis;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  
+  }
+}
