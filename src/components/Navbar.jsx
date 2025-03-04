@@ -11,9 +11,40 @@ const sports = [
   { name: "Badminton", img: "/images/image 14.png" },
   { name: "Cricket", img: "/images/image.png" },
   { name: "Basketball", img: "/images/image 16 .png" },
+  { name: "Football", img: "/images/image 13.png" }, 
+  { name: "Football", img: "/images/image 13.png" }, 
+
   
 ];
 const Navbar = () => {
+   const [formData, setFormData] = useState({ email: "" });
+  
+    const handleChange = (e) => {
+      setFormData({ ...formData, [e.target.name]: e.target.value });
+    };
+  
+    const handleSubmit = async (e) => {
+      e.preventDefault();
+      
+      try {
+        const response = await fetch("https://api.logixai.ca/api/turflow/subscription", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(formData),
+        });
+  
+        if (response.ok) {
+          alert("Thanks for subscribed!");
+          setFormData({email: "" });
+        } else {
+          alert("Failed to submit form.");
+           
+          
+        }
+      } catch (error) {
+        console.error("Error submitting form:", error);
+      }
+    };
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
@@ -37,28 +68,31 @@ const Navbar = () => {
       </nav>
       {menuOpen && (
         <ul className="mobile-menuopen">
-          <li>About</li>
-          <li>Services</li>
-          <li>FAQs</li>
-          <button className="contact-button2">Contact Us</button>
+          <li  ><a href="#missionvission">About</a> </li>
+          <li> <a href="#our-service">Services</a></li>
+          <li> <a href="#faq-ques">FAQs</a></li>
+          <li>  <a href="#contactus"> <button className="contact-button2">Contact Us</button></a></li>
         </ul>
       )}
          <div className="gradint-back"></div>
-          <p className="para3">The Game Starts Here.</p>
+          <div className="gamevalaclass"> <p className="para3">The Game Starts Here.</p></div>
           <div className="cta-text">Get In Touch Now!</div>
+          <form onSubmit={handleSubmit}> 
           <div className="email-container">
-            <input type="email" placeholder="Enter Your Email" className="email-input" />
+            <input type="email" placeholder="Enter Your Email" className="email-input" onChange={handleChange} name ="email"  value={formData.email}  required/>
             {/* <button className="email-submit"> <img src="images/Frame 6.png"/></button> */}
-            <div className="emait-button"> <button className="email-submit"> <img src="images/Frame 6.png"/></button></div>
-          </div>
-          <div className="sports-container">
+            <div className="emait-button"> <button type="submit" className="email-submit"> <img src="images/Frame 6.png"/></button></div>
+          </div></form>
+        <marquee> <div className="sports-container">
+            
       {sports.map((sport, index) => (
         <div key={index} className="sport-card">
           <img src={sport.img} alt={sport.name} className="sport-image" />
           <div className="sport-name"><span className="sp-name">{sport.name}</span> </div>
         </div>
       ))}
-    </div>
+    
+    </div></marquee> 
      
      </div>
      <section id="missionvission"> <MissionVision/> </section>

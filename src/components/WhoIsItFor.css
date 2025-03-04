@@ -1,26 +1,30 @@
 .who-is-it-for-container {
     text-align: center;
     background-color: #F2EFEA;
-    color: #333;
+    
     padding: 40px 20px;
+  
     width: 100%;
+    justify-content: center;
+    align-items: center;
   }
   .whoisit{
     display:flex;
-    margin-left: -40px;
-    margin-top: 50px;
+    justify-content: space-between;
+    /* width: 100%; */
+    margin-top: 80px;
   }
   
   .whoisit2{
-    width: 456px;
-    height: 190px;
+    
+    width: 40%;
     font-family: Metropolis;
 font-weight: 400;
 font-size: 20px;
 line-height: 36px;
-letter-spacing: 0%;
+letter-spacing: 0.6px;
 color: #383E48;
-margin-left: 125px;
+
 
   }
   .heading8 {
@@ -31,6 +35,7 @@ margin-left: 125px;
     letter-spacing: 0.5px;
     text-align: center;
      color: #383E48;
+     margin-top: 200px;
   }
   
   .subheading {
@@ -41,18 +46,20 @@ font-size: 24px;
 line-height: 34px;
 letter-spacing: 0.5px;
 color: #383E48;
+padding-left:80px;
 text-align: left;
   }
   
   .description {
-    max-width: 700px;
-    margin: 10px auto 30px;
+    text-align: left;
+    
+    padding-left:80px;
     font-size:18px;
     line-height: 29px;
     letter-spacing: .5px;
     color: #383E48;
     margin-top: 60px;
-    text-align: left;
+    
 
   }
   
@@ -71,15 +78,16 @@ letter-spacing: 0%;
 
   }
   .tags-container1 {
-     width: 100%;
-     
+     width: 50%;
+    
     height: 280px;
+    
 
   }
   .tags-container2{
-  
+  padding-right: 80px;
     height: 280px;
-    margin-left:50px;
+    
   }
   .tag {
     font-size: 1rem;
@@ -101,55 +109,67 @@ letter-spacing: 0%;
       margin-bottom: 70px;  
   }
 @media (max-width:768px) {
+  .who-is-it-for-container {
+    text-align: center;
+    background-color: #F2EFEA;
+    
+    padding: 40px 20px;
+  
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .heading8 {
+    font-family: Metropolis;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.5px;
+    text-align: center;
+     color: #383E48;
+     margin-top: 180px;
+  }
     .whoisit{
-      
-      margin-left: -140px;
-      margin-top: 170px;
+      display: flex;
+      width: 100%;
     }
     .whoisit2{
-      width: 456px;
-      height: 190px;
+      width: 50%;
       font-family: Metropolis;
   font-weight: 400;
   font-size: 20px;
   line-height: 36px;
   letter-spacing: 0%;
   color: #383E48;
-  margin-left: 170px;
-  margin-top: 240px;
     }
     .tags-container1 {
-      width: 200px;
-     height: 100px;
+      width: 50%;
     
    }
    .tags-container2{
-     height: 190px;
-     margin-top: -100px;
-     margin-left:-300px;
+     height: 160px;
+     padding-top: 30px;
    }
    .subheading {
     font-family: Metropolis;
-font-weight: 400;
+font-weight: 600;
 font-style: italic;
-font-size: 18px;
+font-size: 16px;
 line-height: 34px;
 letter-spacing: 0.5px;
 color: #383E48;
 text-align: left;
-margin-left: 12px;
+
   }
   
   .description {
-    max-width: 700px;
-    margin: 10px auto 30px;
-    font-size:14px;
+    font-size:12px;
     line-height: 29px;
     letter-spacing: .5px;
     color: #383E48;
-    margin-top: 45px;
+    margin-top: 40px;
     text-align: left;
-   margin-left: 12px;
+   
   }
   
   /* .highlight {
@@ -159,32 +179,299 @@ margin-left: 12px;
   } */
   .highlight6{
     font-family: Metropolis;
-font-weight: 700;
+font-weight: 600;
 font-style: italic;
-font-size: 14px;
-line-height: 36px;
+font-size: 12px;
+line-height: 29px;
 letter-spacing: 0.5px;
 
   }
   .footer-text {
     font-family: Metropolis;
-    font-weight: 700;
+    font-weight: 600;
     font-style: italic;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 36px;
-    letter-spacing: .6px;
-    
+    letter-spacing: 0px;
+    padding-right: 20px;
     color: #383E48;
-    margin-top: 130px;
-      margin-bottom: 70px;  
-      margin-left: 12px;
+    margin-top: 50px;
+      margin-bottom: 60px;  
+      text-align: center;
   }
   }
-  @media (max-width:480px) {
-    .tags-container2 {
-      width: 350px;
-     height: 340px;
-     margin-top:-140px;
+  @media (max-width:425px) {
+    .who-is-it-for-container {
+      text-align: center;
+      background-color: #F2EFEA;
+      
+      padding: 40px 20px;
     
-   }
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+    .heading8 {
+      font-family: Metropolis;
+      font-weight: 700;
+      margin-right: 20px;
+      margin-left: 20px;
+      font-size: 32px;
+      line-height: 47px;
+      letter-spacing: 0.4px;
+      text-align: center;
+       color: #383E48;
+       margin-top: 180px;
+       padding-right: 20px;
+    }
+      .whoisit{
+      display: contents;
+        width: 100%;
+      }
+      .whoisit2{
+        width: 100%;
+        font-family: Metropolis;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 36px;
+    letter-spacing: 0%;
+    color: #383E48;
+      }
+      .tags-container1 {
+        width: 50%;
+      
+     }
+     .tags-container2{
+       height: 170px;
+       padding-top: 30px;
+     }
+     .subheading {
+      font-family: Metropolis;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 34px;
+  letter-spacing: .6px;
+  color: #383E48;
+text-align: center;
+  width: 100%;
+  padding-left: 0px;
+  
+    }
+    
+    .description {
+      font-size:12px;
+      line-height: 24px;
+      letter-spacing: .5px;
+
+      color: #383E48;
+      margin-top: 40px;
+      padding:0px;
+      text-align: center;
+      margin-right: 50px;
+      margin-left: 20px;
+       
+    }
+    
+    /* .highlight {
+      font-weight: bold;
+      color: #f97316;
+      
+    } */
+    .highlight6{
+      font-family: Metropolis;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  
+    }
+    .footer-text {
+      font-family: Metropolis;
+      font-weight: 600;
+      font-style: italic;
+      font-size: 20px;
+      line-height: 36px;
+      letter-spacing: 0px;
+      padding-right: 20px;
+      color: #383E48;
+      margin-top: 50px;
+        margin-bottom: 60px;  
+        text-align: center;
+    } 
+  }
+  @media (max-width:375px){
+    .tags-container2{
+      height: 150px;
+      padding-top: 50px;
+    }
+    .heading8 {
+      font-family: Metropolis;
+      font-weight: 700;
+      margin-right: 20px;
+      margin-left: 20px;
+      font-size: 30px;
+      line-height: 47px;
+      letter-spacing: 0.4px;
+      text-align: center;
+       color: #383E48;
+       margin-top: 150px;
+       padding-right: 20px;
+    }
+      .whoisit{
+      display: contents;
+        width: 100%;
+      }
+      .whoisit2{
+        width: 100%;
+        font-family: Metropolis;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 36px;
+    letter-spacing: 0%;
+    color: #383E48;
+      }
+
+      .subheading {
+        font-family: Metropolis;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 34px;
+    letter-spacing: 0.5px;
+    color: #383E48;
+  padding-left: 0px;
+  text-align: center;   
+      }
+      
+      .description {
+        font-size:12px;
+        line-height: 24px;
+        letter-spacing: .5px;
+  
+        color: #383E48;
+        margin-top: 40px;
+        padding:0px;
+        text-align: center;
+        margin-right: 50px;
+        margin-left: 10px;
+         
+      }
+      
+      /* .highlight {
+        font-weight: bold;
+        color: #f97316;
+        
+      } */
+      .highlight6{
+        font-family: Metropolis;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    
+      }
+      .footer-text {
+        font-family: Metropolis;
+        font-weight: 600;
+        font-style: italic;
+        font-size: 18px;
+        line-height: 36px;
+        letter-spacing: 0px;
+        padding-right: 20px;
+        color: #383E48;
+        margin-top: 50px;
+          margin-bottom: 60px;  
+          text-align: center;
+      } 
+  }
+  @media (max-width:320px){
+    .tags-container2{
+      height: 135px;
+      padding-top: 70px;
+    }
+
+    .heading8 {
+      font-family: Metropolis;
+      font-weight: 700;
+      margin-right: 20px;
+      margin-left: 20px;
+      font-size: 28px;
+      line-height: 47px;
+      letter-spacing: 0.4px;
+      text-align: center;
+       color: #383E48;
+       margin-top: 150px;
+       padding-right: 20px;
+    }
+      .whoisit{
+      display: contents;
+        width: 100%;
+      }
+      .whoisit2{
+        width: 100%;
+        font-family: Metropolis;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 36px;
+    letter-spacing: 0%;
+    color: #383E48;
+      }
+
+      .subheading {
+        font-family: Metropolis;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 15px;
+    line-height: 34px;
+    letter-spacing: 0.5px;
+    color: #383E48;
+  padding-left: 0px;
+  
+  text-align: center;   
+      }
+      
+      .description {
+        font-size:12px;
+        line-height: 24px;
+        letter-spacing: .5px;
+  
+        color: #383E48;
+        margin-top: 40px;
+        padding:0px;
+        text-align: center;
+        margin-right: 50px;
+        margin-left: 20px;
+         
+      }
+      
+      /* .highlight {
+        font-weight: bold;
+        color: #f97316;
+        
+      } */
+      .highlight6{
+        font-family: Metropolis;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    
+      }
+      .footer-text {
+        font-family: Metropolis;
+        font-weight: 700;
+        font-style: italic;
+        font-size: 16px;
+        line-height: 36px;
+        letter-spacing: 0px;
+        padding-right: 20px;
+        color: #383E48;
+        margin-top: 50px;
+          margin-bottom: 40px;  
+          text-align: center;
+      } 
   }

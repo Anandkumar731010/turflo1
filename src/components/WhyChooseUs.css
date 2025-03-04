@@ -134,6 +134,7 @@ margin-right: 15px;
     text-align: left;
     line-height: 25px;
     margin-left: 15px;
+    text-align: center;
   }
   .highlight3{
     font-family: Metropolis;
@@ -151,7 +152,7 @@ margin-right: 15px;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 425px) {
   .heading1 {
     font-size: 1.5rem;
   }
@@ -162,9 +163,71 @@ margin-right: 15px;
 
   .description1 {
     font-size: 0.85rem;
+    text-align: center;
+  }
+  .highlight3{
+    font-size:.85rem;
+    
   }
 
   .features-grid {
     grid-template-columns: 1fr;
+  }
+  .features-grid {
+    display: flex;
+    gap:16px;
+    margin-left: -90px;
+    margin-top: 80px;
+    height: 230px;
+    animation:  moveRow 5s linear infinite; 
+  }
+  @keyframes moveRow {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-5%);
+    }
+  }
+  
+  .feature-card {
+    width: 300px;
+
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: #FFFFFF;
+  box-shadow: 6px 6px 20px 0px rgba(0, 0, 0, 0.13);
+    padding: 5px 0px;
+  }
+  
+  .feature-image {
+    width: 290px;
+  
+    flex-shrink: 0;
+    border-radius: 20px 20px 0px 0px;
+    
+  }
+  
+  .feature-title {
+    font-family: Metropolis;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0.6px;
+    color: #FF7018;
+  margin-left: 15px;
+    text-align: left;
+  }
+  
+  .feature-description {
+    font-family: Metropolis;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.6px;
+  color: #383E48;
+  text-align: left;
+  margin-left: 15px;
+  margin-right: 15px;
   }
 }

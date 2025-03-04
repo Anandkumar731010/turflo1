@@ -3,6 +3,7 @@ import React from "react";
 import "./UserReviews.css";
 
 const reviews1 = [
+  
   {
     name: "Daksh Lohmod",
     gender: "M",
@@ -96,10 +97,13 @@ const reviews2 = [
 const UserReviews = () => {
   return (
     
-     <div className="reviews-container"><br/><br/>
+     <div className="reviews-container">
       <div className="heading2"> What Our Users Say About Turflo?</div>
-      <div><img src=" images/Rectangle 20.png" className="rectanglefade"/></div>
-      <div><img src=" images/Rectangle 21.png" className="rectanglefade2"/></div>
+       
+      <div className="fadevalaimg"> 
+      <div  className="rectanglefade"><img src=" images/Rectangle 20.png" /></div>
+     <div  className="rectanglefade2"> <img src=" images/Rectangle 21.png"   alt="fad2"/></div>
+      </div>
       <div className="reviews-grid">
         {reviews1.map((review, index) => (
           <div key={index} className="review-card">
@@ -107,10 +111,9 @@ const UserReviews = () => {
               <h3 className="reviewer-name">{review.name}</h3>
               <div className="review-rating"><img src="images/star.png"className="rat-img"/><div className="rew-rating">{review.rating}</div></div>
             </div>
-            
             <div className="reviewer-info">{review.gender} • {review.age} • {review.sport}</div>
             <div className="review-text">{review.review}</div>
-          
+
           </div>
         ))}
       </div>
@@ -128,7 +131,7 @@ const UserReviews = () => {
           </div>
         ))}
       </div>
-      
+    
     </div>
     
   );

@@ -3,8 +3,8 @@ import "./WhoIsItFor.css";
 
 const WhoIsItFor = () => {
   return (
-    <div className="who-is-it-for-container"><br/><br/><br/><br/><br/><br/><br/>
-      <h2 className="heading8">Who is it for? – If You Love Playing, This is for YOU!</h2><br/><br/>
+    <div className="who-is-it-for-container">
+      <h2 className="heading8">Who is it for? – If You Love Playing, This is for YOU!</h2>
      <div className="whoisit">
       <div className="whoisit2"> <p className="subheading">Because Sports is for Everyone!</p>
       <p className="description">

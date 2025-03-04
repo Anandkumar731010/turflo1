@@ -137,6 +137,7 @@ color: #1E293B;
   display: none;
   font-size: 24px;
   cursor: pointer;
+  background-color: transparent;
   
 }
 .menu-button:hover{
@@ -149,6 +150,10 @@ margin-top: 234px;
 height: 495px;
 position:relative;
 z-index: -1;
+}
+.gamevalaclass{
+text-align: center;
+justify-content: center;
 }
 .para3{
 
@@ -199,8 +204,9 @@ line-height: 60px; /* 250% */
   font-weight: 400;
 font-style: italic;
 font-size: 16px;
-
+background-color: #F2EFEA;
 letter-spacing: .6px;
+color: black;
 }
 .email-input ::placeholder{
   font-family: Metropolis;
@@ -231,7 +237,7 @@ padding: 15px;
 }
 
 /* Responsive Design */
-@media (max-width: 798px) {
+@media (max-width: 768px) {
   .nav-links {
     display: none;
   }
@@ -253,19 +259,20 @@ padding: 15px;
   display: flex;
   justify-content: center;
   gap: 20px;
-  width: 1502px;
+  
   height: 205px;
-  margin-left: -105px;
+  
   margin-top: 110px;
   /* overflow: hidden; */
-  animation: moveRow 5s linear infinite; 
+   /* overflow: hidden;  */
+  animation:  moveRow 0s linear infinite; 
 }
 @keyframes moveRow {
   0% {
     transform: translateX(-100%);
   }     
   100% {
-    transform: translateX(-100%);
+    transform: translateX(100%);
   }
 }
 .sport-card {
@@ -316,26 +323,29 @@ border-top: 2px solid #1E293B;
 
 @media (max-width: 768px) {
   .navbar-container {
-    margin-left: -300px;
+    
       margin-top: -100px;
-      height: 826px;
+      
       backdrop-filter: blur(8px);
       background-image: url('/images/image 12.png');
       background-size: cover;
       opacity:1;
+      justify-content: center;
+      justify-content: space-between;
+      
   }
   .navbar {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    
+     padding-right: 10px;
     margin-top: 100px;
     
   }
   .logo {
-
-    height: 80px;
+   
+    padding-left: 0px;
     margin-top: 14px;
-    margin-left: 330px;
+  
   }
   .para3{
     height: 60px;  
@@ -343,14 +353,14 @@ border-top: 2px solid #1E293B;
     color: #383E48;
   text-align: center;
   font-family: Metropolis;
-  font-size: 38px;
+  font-size: 3.5rem;
   font-style: normal;
   font-weight: 800;
   line-height: 60px; /* 85.714% */
   }
   .cta-text {
-    margin-left: 270px;
-    margin-top: 80px;
+    
+    margin-top: 100px;
     color: #FF7018;
   text-align: center;
   font-family: Metropolis;
@@ -367,7 +377,6 @@ border-top: 2px solid #1E293B;
     justify-content: center;
     gap: 14px;
   
-    margin-left: 300px;
   }
   
   .email-input {
@@ -382,7 +391,7 @@ border-top: 2px solid #1E293B;
     font-weight: 400;
   font-style: italic;
   font-size: 16px;
-  
+  color: black;
   letter-spacing: .6px;
   }
   .email-input ::placeholder{
@@ -413,11 +422,11 @@ border-top: 2px solid #1E293B;
     background-color: #FF7018;
   }
   .mobile-menuopen {
-  
+    line-height: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: -12px;
+    margin-top: 5px;
     position:relative;
     left: 0;
     width: 100%;
@@ -436,8 +445,12 @@ border-top: 2px solid #1E293B;
     cursor: pointer;
     transition: color 0.3s ease;
     text-align: center;
-    margin-left: 300px;
+  
     
+  }
+  .mobile-menuopen li a {
+   text-decoration: none;
+   color: #FFFFFF;
   }
   .contact-button2{
     background-color: #FF7018;
@@ -445,7 +458,7 @@ border-top: 2px solid #1E293B;
     padding: 10px 10px;
     border: none;
     border-radius: 10px;
-    margin-left: 300px;
+    margin-top: 6px;
     letter-spacing: .6px;
     cursor: pointer;
     font-family: Metropolis;
@@ -453,7 +466,7 @@ border-top: 2px solid #1E293B;
   }
   .sports-container {
     justify-content: center;
-    margin-left: -320px;
+    
   }
   /* .sport-card {
     display: none;
@@ -462,10 +475,10 @@ border-top: 2px solid #1E293B;
     display: block;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 425px) {
   .sports-container {
     justify-content: center;
-    margin-left: -320px;
+  
   }
   /* .sport-card {
     display: none;
@@ -474,24 +487,25 @@ border-top: 2px solid #1E293B;
     display: block;
   }
   .navbar-container {
-  margin-left: -300px;
+  
     margin-top: -100px;
-    height: 766px;
+   
     backdrop-filter: blur(8px);
-    background-image: url('/images/image 12.png');
+    background-image: url('/images/320backgroundimg.png');
     background-size: cover;
-    opacity:1;
-    
+    opacity:1;    
   }
   .logo {
-    height: 80px;
+  
+    height: 60px;
     margin-top: 12px;
-    margin-left: 320px;
+    margin-left: 20px;
+    
   }
   .gradint-back{
     background: linear-gradient(180deg, rgba(241, 240, 240, 0) 0%, #F1F0F0 100%);
   margin-top: 294px;
-  height: 370px;
+  height: 390px;
   position:relative;
   z-index: -1;
   }
@@ -504,38 +518,38 @@ border-top: 2px solid #1E293B;
     color: #383E48;
   text-align: center;
   font-family: Metropolis;
-  font-size: clamp(32px, 5vw, 44px);
+  font-size: 3.6rem;
   font-style: normal;
   font-weight: 800;
-  line-height: 60px; /* 85.714% */
+  line-height: 70px; /* 85.714% */
   }
    
   
   .cta-text {
-    margin-left: 270px;
-    margin-top: 80px;
+    
+    margin-top: 100px;
     color: #FF7018;
   text-align: center;
   font-family: Metropolis;
-  font-size: 22px;
+  font-size: 24px;
   font-style: normal;
   font-weight: 700;
   line-height: 60px; /* 250% */
   }
   
   .email-container {
-    width: 210px;
+  
     height: Hug(50px);
     display: flex;
     justify-content: center;
     gap: 14px;
     opacity: .75;
-    margin-left: 400px;
+    
   }
   
   .email-input {
     padding: 15px 18px;
-    width: 337px;
+  width: 250px;
     height: 50;
     font-family: Metropolis;
     border: 1px solid #4B5563;
@@ -554,7 +568,7 @@ border-top: 2px solid #1E293B;
   font-size: 18px;
   line-height: 60px;
   letter-spacing: 0%;
-  
+  color: black;
   }
   
   .email-submit{
@@ -563,35 +577,35 @@ border-top: 2px solid #1E293B;
     border: none;
     
     cursor: pointer;
-    width: Fixed(40px);
-  height: Fixed(40px);
+
   border-radius: 10px;
   gap: 10px;
   padding: 14px;
-  
+  opacity: 1;
   }
    
   
   .email-submit:hover {
     background-color: #FF7018;
+    
   }
   .sports-container {
     display: flex;
     justify-content: center;
     gap: 12px;
-    width: 1502px;
+    
     height: 200px;
-    margin-left: -105px;
+    
     margin-top: 160px;
     /* overflow: hidden; */
-    animation: moveRow 5s linear infinite; 
+    animation: moveRow 0s linear infinite; 
   }
   .mobile-menuopen {
-  
+    line-height: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: -12px;
+    margin-top: 5px;
     position:relative;
     left: 0;
     width: 100%;
@@ -601,16 +615,186 @@ border-top: 2px solid #1E293B;
     
     gap: 0px;
     list-style: none;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 800px;
     color: #FFFFFF;
-    letter-spacing: .6px;
+    letter-spacing: 1px;
+    
   }
   .mobile-menuopen li {
     cursor: pointer;
     transition: color 0.3s ease;
     text-align: center;
-    margin-left: 240px;
+    margin-left: 0px;
+    
+  }
+  .contact-button2{
+    background-color: #FF7018;
+    color: #FFFFFF;
+    padding: 10px 9px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 10px;
+    margin-left: 0px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-family: Metropolis;
+    transition: background-color 0.3s ease;
+  }
+
+
+}
+@media (max-width: 375px) {
+  .sports-container {
+    justify-content: center;
+    
+  }
+  /* .sport-card {
+    display: none;
+  } */
+  .sport-card:first-child {
+    display: block;
+  }
+  .navbar-container {
+  
+    margin-top: -100px;
+    height: 766px;
+    backdrop-filter: blur(8px);
+    background-image: url('/images/320backgroundimg.png');
+        background-size: cover;
+  
+    opacity:1;
+    
+  }
+  .logo {
+  
+    height: 60px;
+    margin-top: 12px;
+    margin-left: 22px;
+  }
+  .gradint-back{
+    background: linear-gradient(180deg, rgba(241, 240, 240, 0) 0%, #F1F0F0 100%);
+  margin-top: 294px;
+  height: 400px;
+  position:relative;
+  z-index: -1;
+  }
+  .para3{
+    
+    height: 60px;
+  position: relative;
+  
+  margin-top: -620px;
+    color: #383E48;
+  text-align: center;
+  font-family: Metropolis;
+  font-size: 3.2rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 60px; /* 85.714% */
+  }
+   
+  
+  .cta-text {
+    
+    margin-top: 100px;
+    color: #FF7018;
+  text-align: center;
+  font-family: Metropolis;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px; /* 250% */
+  }
+  
+  .email-container {
+  
+    height: Hug(50px);
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    opacity: .75;
+    
+  }
+  
+  .email-input {
+    padding: 15px 18px;
+  width: 220px;
+    height: 50;
+    font-family: Metropolis;
+    border: 1px solid #4B5563;
+    border-radius: 10px 10px 10px 10px;
+    outline: none;
+    font-style: italic;
+    font-weight: 400;
+  font-style: italic;
+  font-size: 16px;
+  color: black;
+  letter-spacing: .6px;
+  }
+  .email-input ::placeholder{
+    font-family: Metropolis;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 60px;
+  letter-spacing: 0%;
+  
+  }
+  
+  .email-submit{
+    background-color: #FF7018;
+  
+    border: none;
+    
+    cursor: pointer;
+
+  border-radius: 10px;
+  gap: 10px;
+  padding: 14px;
+  
+  }
+   
+  
+  .email-submit:hover {
+    background-color: #FF7018;
+    
+  }
+  .sports-container {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    
+    height: 200px;
+    
+    margin-top: 160px;
+    /* overflow: hidden; */
+    animation: moveRow 0s linear infinite; 
+  }
+  .mobile-menuopen {
+  line-height: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5px;
+    position:relative;
+    left: 0;
+    width: 100%;
+    background: #1E293B;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 16px 0;
+    
+    gap: 0px;
+    list-style: none;
+    font-size: 14px;
+    font-weight: 800px;
+    color: #FFFFFF;
+    letter-spacing: 1px;
+  }
+  .mobile-menuopen li {
+    cursor: pointer;
+    transition: color 0.3s ease;
+    text-align: center;
+    margin-left: 0px;
     
   }
   .contact-button2{
@@ -619,8 +803,9 @@ border-top: 2px solid #1E293B;
     padding: 10px 10px;
     border: none;
     border-radius: 10px;
-    margin-left: 240px;
-    letter-spacing: .6px;
+    margin-left: 0px;
+    letter-spacing: 1px;
+    margin-top: 5px;
     cursor: pointer;
     font-family: Metropolis;
     transition: background-color 0.3s ease;
@@ -628,4 +813,210 @@ border-top: 2px solid #1E293B;
 
 
 }
- 
+
+@media (max-width: 320px) {
+  .sports-container {
+    justify-content: center;
+  
+  }
+  /* .sport-card {
+    display: none;
+  } */
+  .sport-card:first-child {
+    display: block;
+  }
+  .navbar-container {
+  
+    margin-top: -100px;
+    height: 766px;
+    backdrop-filter: blur(8px);
+    background-image: url('/images/320backgroundimg.png');
+    background-size: cover;
+    opacity:1;
+  }
+  .logo {
+    
+    height: 60px;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  .gradint-back{
+    background: linear-gradient(180deg, rgba(241, 240, 240, 0) 0%, #F1F0F0 100%);
+  margin-top: 294px;
+  height: 400px;
+  position:relative;
+  z-index: -1;
+  }
+  .para3{
+    
+    height: 60px;
+  position: relative;
+  
+  margin-top: -620px;
+    color: #383E48;
+  text-align: center;
+  font-family: Metropolis;
+  font-size: 2.7rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 60px; /* 85.714% */
+  }
+  .cta-text {
+    
+    margin-top: 100px;
+    color: #FF7018;
+  text-align: center;
+  font-family: Metropolis;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px; /* 250% */
+  }
+  
+  .email-container {
+  
+    height: Hug(50px);
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    opacity: .75;
+    
+  }
+  
+  .email-input {
+    padding: 15px 18px;
+    width: 170px;
+    height: 50;
+    font-family: Metropolis;
+    border: 1px solid #4B5563;
+    border-radius: 10px 10px 10px 10px;
+    outline: none;
+    font-style: italic;
+    font-weight: 400;
+  font-style: italic;
+  font-size: 16px;
+  color: black;
+  letter-spacing: .6px;
+  }
+  .email-input ::placeholder{
+    font-family: Metropolis;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 60px;
+  letter-spacing: 0%;
+  
+  }
+  
+  .email-submit{
+    background-color: #FF7018;
+  
+    border: none;
+    
+    cursor: pointer;
+
+  border-radius: 10px;
+  gap: 10px;
+  padding: 14px;
+  
+  }
+   
+  
+  .email-submit:hover {
+    background-color: #FF7018;
+    
+  }
+  .sports-container {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+  
+    height: 200px;
+    
+    margin-top: 160px;
+    /* overflow: hidden; */
+    animation: moveRow 0s linear infinite; 
+  }
+  .sport-card {
+    position: relative;
+    border-radius: 20px;
+    
+  }
+  
+  .sport-image {
+    width: 358.75px;
+  height: 205px;
+  border-radius: 20px;
+  }
+
+  .sport-name {
+    width: Hug(120px);
+  height: Fixed(30px);
+  border-top-left-radius: 33px;
+  border-bottom-left-radius: 33px;
+  border-top-width: 2px;
+  padding-top: 4px;
+  padding-right: 17px;
+  padding-bottom: 4px;
+  padding-left: 17px;
+  gap: 16px;
+  
+  border-top: 2px solid #1E293B;
+    position: absolute;
+      bottom: 22px;
+    right: 0px;
+    background: #FFFFFF;
+    
+   
+    
+  }
+  .sp-name{
+    font-family: Metropolis;
+    color: #1E293B;
+    font-weight: 600;
+    font-size: 16px;
+    
+    
+  }
+  .mobile-menuopen {
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5px;
+    position:relative;
+    left: 0;
+    width: 100%;
+    background: #1E293B;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 16px 0;
+    line-height: 30px;
+    gap: 0px;
+    list-style: none;
+    font-size: 12px;
+    font-weight: 800px;
+    color: #FFFFFF;
+    letter-spacing: 1px;
+  }
+  .mobile-menuopen li {
+    cursor: pointer;
+    transition: color 0.3s ease;
+    text-align: center;
+    margin-left: 0px;
+    
+  }
+  .contact-button2{
+    background-color: #FF7018;
+    color: #FFFFFF;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 10px;
+    margin-left: 0px;
+    letter-spacing: 1px;
+    margin-top: 5px;
+    cursor: pointer;
+    font-family: Metropolis;
+    transition: background-color 0.3s ease;
+  }
+
+
+}

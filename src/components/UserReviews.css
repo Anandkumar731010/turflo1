@@ -1,44 +1,45 @@
 .reviews-container {
-  width: 1440px;
+  width: 100%;
   height: 720px;
   background-color: #383E48;
+  position: relative; /* Ensure absolute elements stay inside */
+  overflow: hidden; /* Prevent overflow */
 }
+ 
 .heading2 {
   font-family: Metropolis;
   font-weight: 700;
   font-size: 42px;
-  line-height: 48px;
-  letter-spacing: 0.6px;
+  padding-top: 60px;
   text-align: center;
-   color: #FFFFFF; 
-  margin-top: 40px; 
-  width: 792px;
-  height: 48px;
-  margin-left: 320px;
-  
+  color: #FFFFFF;
 }
-.rectanglefade{
-  margin-top: -100px;
+ 
+.fadevalaimg {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
   position: absolute;
+  top: 0; /* Adjust if needed */
+  left: 0;
+}
+ 
+.rectanglefade, .rectanglefade2 {
+  max-width: 500px;
   z-index: 1;
 }
-.rectanglefade2{
-  
-  margin-left: 1110px;
-  margin-top: -100px;
-  position: absolute;
-  z-index: 1;
-}
+ 
 .reviews-grid {
   display: grid;
-  margin-top: 100px;
+margin-top: 100px;
   width: 1858px;
-  height: 182px;
+ 
   margin-left: -209px;
-  
+ 
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  
-  animation: moveRow  5s linear infinite; 
+ 
+  animation: moveRow  5s linear infinite;
 }
 @keyframes moveRow {
   from {
@@ -52,13 +53,13 @@
   display: grid;
   margin-top: 90px;
   width: 1858px;
-  height: 182px;
+ 
   margin-left: -84px;
   margin-top: 30px;
-  
+ 
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  
-  animation: moveRow1  5s linear infinite; 
+ 
+  animation: moveRow1  5s linear infinite;
 }
 @keyframes moveRow1 {
   from {
@@ -68,16 +69,16 @@
     transform: translateX(5%);
   }
 }
-
+ 
 .review-card {
   background: #383E48;
-  
+ 
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.7);
   width: 350px;
   height: 182px;  
 }
-
+ 
 .review-header {
   display: flex;
   justify-content: space-between;
@@ -86,7 +87,7 @@
   margin-top: -7px;
   margin-left: 20px;
 }
-
+ 
 .reviewer-name {
   width: 177px;
   height: 24px;
@@ -119,10 +120,10 @@ letter-spacing: 0.6px;
 color: rgba(255, 255, 255, 0.7);
 width: 27px;
 height: 18px;
-
+ 
 }
 .reviewer-info {
-  
+ 
 height: 16px;
   color: #FFFFFF;
   margin-left: 20px;
@@ -130,7 +131,7 @@ height: 16px;
   letter-spacing: .7px;
   margin-top: -7px;
 }
-
+ 
 .review-text {
   width: 316px;
 height: 90px;
@@ -139,40 +140,301 @@ font-weight: 500;
 font-size: 10px;
 letter-spacing: .6px;
 line-height: 15px;
-
+ 
 color: rgba(255, 255, 255, 0.7);
 margin-left: 20px;
 margin-top: 20px;
-
+ 
 }
 @media (max-width:768px) {
+  .reviews-container {
+    width: 100%;
+    height: 720px;
+    background-color: #383E48;
+    position: relative; /* Ensure absolute elements stay inside */
+    overflow: hidden; /* Prevent overflow */
+  }
+   
   .heading2 {
     font-family: Metropolis;
-    font-weight: 500;
-    font-size: 36px;
-    line-height: 48px;
-    letter-spacing: 0.5px;
+    font-weight: 700;
+    font-size: 38px;
+    padding-top: 60px;
     text-align: center;
-     color: #FFFFFF; 
-     
-    margin-top: 40px; 
-    width: 350px;
-    
-    margin-left: 60px;
-  
-    
-    
+    color: #FFFFFF;
   }
-  .rectanglefade{
-    margin-top: -100px;
+   
+  .fadevalaimg {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
     position: absolute;
+    top: 0; /* Adjust if needed */
+    left: 0;
+  }
+   
+  .rectanglefade, .rectanglefade2 {
+    max-width: 500px;
+    z-index: 1;
+  }
+   
+  .reviews-grid {
+    display: grid;
+  margin-top: 100px;
+    width: 1858px;
+   
+    margin-left: -209px;
+   
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   
+    animation: moveRow  5s linear infinite;
+  }
+  @keyframes moveRow {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-5%);
+    }
+  }
+  .reviews-grid2 {
+    display: grid;
+    margin-top: 90px;
+    width: 1858px;
+   
+    margin-left: -84px;
+    margin-top: 30px;
+   
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   
+    animation: moveRow1  5s linear infinite;
+  }
+  @keyframes moveRow1 {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(5%);
+    }
+  }
+}
+@media (max-width:425px) {
+  .reviews-container {
+    width: 100%;
+    height: 770px;
+    background-color: #383E48;
+    position: relative; /* Ensure absolute elements stay inside */
+    overflow: hidden; /* Prevent overflow */
+  }
+   
+  .heading2 {
+    font-family: Metropolis;
+    font-weight: 700;
+    font-size: 35px;
+    padding-top: 60px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+   
+  .fadevalaimg {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 0; /* Adjust if needed */
+    left: 0;
+  }
+   
+  .rectanglefade, .rectanglefade2 {
+    max-width: 500px;
     z-index: -1;
   }
-  .rectanglefade2{
-    
-    margin-left: 1110px;
-    margin-top: -100px;
+   
+  .reviews-grid {
+    display: grid;
+  margin-top: 100px;
+    width: 1858px;
+   
+    margin-left: -209px;
+   
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   
+    animation: moveRow  5s linear infinite;
+  }
+  @keyframes moveRow {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-10%);
+    }
+  }
+  .reviews-grid2 {
+    display: grid;
+    margin-top: 90px;
+    width: 1858px;
+   
+    margin-left: -84px;
+    margin-top: 30px;
+   
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   
+    animation: moveRow1  5s linear infinite;
+  }
+  @keyframes moveRow1 {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(5%);
+    }
+  }
+}
+@media (max-width:375px) {
+  .reviews-container {
+    width: 100%;
+    height: 770px;
+    background-color: #383E48;
+    position: relative; /* Ensure absolute elements stay inside */
+    overflow: hidden; /* Prevent overflow */
+  }
+   
+  .heading2 {
+    font-family: Metropolis;
+    font-weight: 700;
+    font-size: 33px;
+    padding-top: 60px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+   
+  .fadevalaimg {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
     position: absolute;
+    top: 0; /* Adjust if needed */
+    left: 0;
+  }
+   
+  .rectanglefade, .rectanglefade2 {
+    max-width: 500px;
     z-index: -1;
+  }
+   
+  .reviews-grid {
+    display: grid;
+  margin-top: 100px;
+    width: 1858px;
+   
+    margin-left: -209px;
+   
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   
+    animation: moveRow  5s linear infinite;
+  }
+  @keyframes moveRow {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-10%);
+    }
+  }
+  .reviews-grid2 {
+    display: grid;
+    margin-top: 90px;
+    width: 1858px;
+   
+    margin-left: -84px;
+    margin-top: 30px;
+   
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   
+    animation: moveRow1  5s linear infinite;
+  }
+  @keyframes moveRow1 {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(5%);
+    }
+  }
+}
+@media (max-width:320px) {
+  .reviews-container {
+    width: 100%;
+    height: 770px;
+    background-color: #383E48;
+    position: relative; /* Ensure absolute elements stay inside */
+    overflow: hidden; /* Prevent overflow */
+  }
+   
+  .heading2 {
+    font-family: Metropolis;
+    font-weight: 700;
+    font-size: 30px;
+    padding-top: 60px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+   
+  .fadevalaimg {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 0; /* Adjust if needed */
+    left: 0;
+  }
+   
+  .rectanglefade, .rectanglefade2 {
+    max-width: 500px;
+    z-index: -1;
+  }
+   
+  .reviews-grid {
+    display: grid;
+  margin-top: 100px;
+    width: 1858px;
+   
+    margin-left: -209px;
+   
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   
+    animation: moveRow  5s linear infinite;
+  }
+  @keyframes moveRow {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-10%);
+    }
+  }
+  .reviews-grid2 {
+    display: grid;
+    margin-top: 90px;
+    width: 1858px;
+   
+    margin-left: -84px;
+    margin-top: 30px;
+   
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   
+    animation: moveRow1  5s linear infinite;
+  }
+  @keyframes moveRow1 {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(5%);
+    }
   }
 }

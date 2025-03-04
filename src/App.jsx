@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "./components/Navbar";
+
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "@fontsource/metropolis"; 
 import '@fontsource/metropolis/400.css'; // Regular

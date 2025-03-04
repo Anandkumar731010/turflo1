@@ -16,7 +16,7 @@ const WhyChooseUs = () => {
     {
       image: "images/image 9.png",
       title: "Gamified Sports Experience",
-      description: "Track your performance with your Turbo score. Who said sports can't be rewarding?"
+      description: "Track your performance with your Turflo score. Who said sports can't be rewarding?"
     },
     {
       image: "images/image 10.png",
@@ -32,7 +32,9 @@ const WhyChooseUs = () => {
       <div className="description1">
       Because Booking a Sports Venue Should Be as Fun as Playing! <p>We’re not just another venue listing platform—we’re changing the game for sports lovers.</p> Here’s why  <span className="highlight3">Turflo</span> is your ultimate playmate:
       </div><br/>
+       
       <div className="features-grid">
+
         {features.map((feature, index) => (
           <div key={index} className="feature-card">
             <img src={feature.image} alt={feature.title} className="feature-image" />
@@ -40,8 +42,9 @@ const WhyChooseUs = () => {
             <p className="feature-description">{feature.description}</p>
           </div>
         ))}
-        
+         
       </div>
+    
       <br/>
     </div>
     
